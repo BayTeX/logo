@@ -1,0 +1,26 @@
+% Title:       BayTeX logo
+% Author:      Leo Arnold (@leoarnold)
+% URL:         https://github.com/BayTeX/logo
+% License:     CC BY 4.0 - http://creativecommons.org/licenses/by/4.0/
+
+\documentclass{standalone}
+
+\usepackage{tikz}
+
+% Crop out just the TikZ picture
+\usepackage[active, tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{0cm}
+
+\definecolor{himmelblau}{HTML}{0098d4}
+
+\begin{document}
+
+\begin{tikzpicture}
+  \fill[white] (0, 1) rectangle (2, 2);
+  \node at (1, 1.5) { \textcolor{himmelblau}{ \LARGE\bfseries Bay} };
+  \fill[himmelblau] (0, 0) rectangle (2, 1);
+  \node at (1, 0.5) { \textcolor{white}{\LARGE\bfseries \TeX{}} };
+\end{tikzpicture}
+
+\end{document}
